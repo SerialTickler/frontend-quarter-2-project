@@ -12,6 +12,8 @@
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,700&display=swap"
         rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <!-- Critical CSS -->
     <style>
@@ -84,13 +86,14 @@
             <section class="category-title-container">
                 <div class="category-title-block">
                     <div class="category-title__box">
-                        <div class="category-title-text pink-text"><span class="category-title-text">New Arrivals
-                            </span>
+                        <div class="category-title-text pink-text">
+                            <span class="category-title-text">New Arrivals</span>
                         </div>
 
                         <nav class="breadcrumbs">
                             <a class="breadcrumb" href="#">Home</a><span class="breadcrumb"> / </span>
                             <a class="breadcrumb" href="#">Men</a><span class="breadcrumb"> / </span>
+                            <!-- Мы на этой странице, потому это не ссылка -->
                             <span class="breadcrumb">New Arrivals</span>
                         </nav>
                     </div>
@@ -113,68 +116,152 @@
                                 <ul class="dropdown-menutoggle">
                                     <li class="dropdown-header"><span class="dropdown-header-text">Category</span>
                                         <ul class="subcategories">
-                                            <li><input class="category-checkbox" type="checkbox" id="Accessories"
-                                                    name="Accessories" value="Accessories">
+                                            <li class="dropdown-subcategory-item"><input class="category-checkbox"
+                                                    type="checkbox" id="Accessories" name="Accessories"
+                                                    value="Accessories">
                                                 <label for="Accessories">Accessories</label>
                                             </li>
-                                            <li><input class="category-checkbox" type="checkbox" id="Bags" name="Bags"
-                                                    value="Bags">
+                                            <li class="dropdown-subcategory-item"><input class="category-checkbox"
+                                                    type="checkbox" id="Bags" name="Bags" value="Bags">
                                                 <label for="Bags">Bags</label>
                                             </li>
-                                            <li><input class="category-checkbox" type="checkbox" id="Denim" name="Denim"
-                                                    value="Denim">
+                                            <li class="dropdown-subcategory-item"><input class="category-checkbox"
+                                                    type="checkbox" id="Denim" name="Denim" value="Denim">
                                                 <label for="Denim">Denim</label>
                                             </li>
-                                            <li><input class="category-checkbox" type="checkbox" id="Hoodies"
-                                                    name="Hoodies" value="Hoodies & Sweatshirts">
+                                            <li class="dropdown-subcategory-item"><input class="category-checkbox"
+                                                    type="checkbox" id="Hoodies" name="Hoodies"
+                                                    value="Hoodies & Sweatshirts">
                                                 <label for="Hoodies">Hoodies & Sweatshirts</label>
                                             </li>
-                                            <li><input class="category-checkbox" type="checkbox" id="Jackets"
-                                                    name="Jackets" value="Jackets & Coats">
+                                            <li class="dropdown-subcategory-item"><input class="category-checkbox"
+                                                    type="checkbox" id="Jackets" name="Jackets" value="Jackets & Coats">
                                                 <label for="Jackets">Jackets & Coats</label>
                                             </li>
-                                            <li><input class="category-checkbox" type="checkbox" id="Polos" name="Polos"
-                                                    value="Polos">
+                                            <li class="dropdown-subcategory-item"><input class="category-checkbox"
+                                                    type="checkbox" id="Polos" name="Polos" value="Polos">
                                                 <label for="Polos">Polos</label>
                                             </li>
-                                            <li><input class="category-checkbox" type="checkbox" id="Shirts"
-                                                    name="Shirts" value="Shirts">
+                                            <li class="dropdown-subcategory-item"><input class="category-checkbox"
+                                                    type="checkbox" id="Shirts" name="Shirts" value="Shirts">
                                                 <label for="Shirts">Shirts</label>
                                             </li>
-                                            <li><input class="category-checkbox" type="checkbox" id="Shoes" name="Shoes"
-                                                    value="Shoes">
+                                            <li class="dropdown-subcategory-item"><input class="category-checkbox"
+                                                    type="checkbox" id="Shoes" name="Shoes" value="Shoes">
                                                 <label for="Shoes">Shoes</label>
                                             </li>
-                                            <li><input class="category-checkbox" type="checkbox" id="Sweaters"
-                                                    name="Sweaters" value="Sweaters & Kints">
+                                            <li class="dropdown-subcategory-item"><input class="category-checkbox"
+                                                    type="checkbox" id="Sweaters" name="Sweaters"
+                                                    value="Sweaters & Kints">
                                                 <label for="Sweaters">Sweaters & Knits</label>
                                             </li>
-                                            <li><input class="category-checkbox" type="checkbox" id="T-Shirts"
-                                                    name="T-Shirts" value="T-Shirts">
+                                            <li class="dropdown-subcategory-item"><input class="category-checkbox"
+                                                    type="checkbox" id="T-Shirts" name="T-Shirts" value="T-Shirts">
                                                 <label for="T-Shirts">T-Shirts</label>
                                             </li>
-                                            <li><input class="category-checkbox" type="checkbox" id="Tanks" name="Tanks"
-                                                    value="Tanks">
+                                            <li class="dropdown-subcategory-item"><input class="category-checkbox"
+                                                    type="checkbox" id="Tanks" name="Tanks" value="Tanks">
                                                 <label for="Tanks">Tanks</label>
                                             </li>
-                                            <li class="divider" role="separator">
                                         </ul>
                                     </li>
-                                    <li><span class="dropdown-header-text">Brand</span></li>
-                                    <li><span class="dropdown-header-text">Designer</span></li>
+                                    <li class="dropdown-header"><span class="dropdown-header-text">Brand</span></li>
+                                    <li class="dropdown-header"><span class="dropdown-header-text">Designer</span></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <ul class="filters-secondary">
-                        <li class="secondary-filter-dropdown-header">Trending Now<i class="fas fa-chevron-down"></i>
-                        </li>
-                        <li class="secondary-filter-dropdown-header">Size<i class="fas fa-chevron-down"></i>
-                        </li>
-                        <li class="secondary-filter-dropdown-header">Price<i class="fas fa-chevron-down"></i></li>
-                    </ul>
-                </div>
+                    <div class="filters-secondary">
+                        <div class="toggle-wrapper">
+                            <input class="dropdown-checkbox" type="checkbox" id="trending-toggle"
+                                name="trending-toggle" />
+                            <label for="trending-toggle">
+                                <span class="secondary-filter-dropdown-header">Trending Now<i
+                                        class="fas fa-chevron-down"></i></span>
+                            </label>
+                            <div class="trending-filter__categories">
+                                <ul class="dropdown-trending">
+                                    <li class="dropdown-filter-item"><input class="secondary-filter-checkbox"
+                                            type="checkbox" id="trending-xs" name="trending-xs" value="trending-xs">
+                                        <label for="trending-xs">placeholder</label>
+                                    </li>
+                                    <li class="dropdown-filter-item"><input class="secondary-filter-checkbox"
+                                            type="checkbox" id="trending-s" name="trending-s" value="trending-s">
+                                        <label for="trending-s">placeholder</label>
+                                    </li>
+                                    <li class="dropdown-filter-item"><input class="secondary-filter-checkbox"
+                                            type="checkbox" id="trending-m" name="trending-m" value="trending-m">
+                                        <label for="trending-m">placeholder</label>
+                                    </li>
+                                    <li class="dropdown-filter-item"><input class="secondary-filter-checkbox"
+                                            type="checkbox" id="trending-l" name="trending-l" value="trending-l">
+                                        <label for="trending-l">placeholder</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
+
+                        <div class="toggle-wrapper">
+                            <input class="dropdown-checkbox" type="checkbox" id="size-toggle" name="size-toggle" />
+                            <label for="size-toggle">
+                                <span class="secondary-filter-dropdown-header">Size<i
+                                        class="fas fa-chevron-down"></i></span>
+                            </label>
+                            <div class="size-filter__categories">
+                                <ul class="dropdown-size">
+                                    <li class="dropdown-filter-item"><input class="secondary-filter-checkbox"
+                                            type="checkbox" id="size-xs" name="size-xs" value="size-xs">
+                                        <label for="size-xs">xs</label>
+                                    </li>
+                                    <li class="dropdown-filter-item"><input class="secondary-filter-checkbox"
+                                            type="checkbox" id="size-s" name="size-s" value="size-s">
+                                        <label for="size-s">s</label>
+                                    </li>
+                                    <li class="dropdown-filter-item"><input class="secondary-filter-checkbox"
+                                            type="checkbox" id="size-m" name="size-m" value="size-m">
+                                        <label for="size-m">m</label>
+                                    </li>
+                                    <li class="dropdown-filter-item"><input class="secondary-filter-checkbox"
+                                            type="checkbox" id="size-l" name="size-l" value="size-l">
+                                        <label for="size-l">l</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="toggle-wrapper">
+                            <input class="dropdown-checkbox" type="checkbox" id="price-toggle" name="price-toggle" />
+                            <label for="price-toggle">
+                                <span class="secondary-filter-dropdown-header">Price<i
+                                        class="fas fa-chevron-down"></i></span>
+                            </label>
+                            <div class="price-filter__categories">
+                                <ul class="dropdown-price">
+                                    <li class="dropdown-filter-item"><input class="secondary-filter-checkbox"
+                                            type="checkbox" id="price-xs" name="price-xs" value="price-xs">
+                                        <label for="price-xs">$100&nbsp;-&nbsp;$1000</label>
+                                    </li>
+                                    <li class="dropdown-filter-item"><input class="secondary-filter-checkbox"
+                                            type="checkbox" id="price-s" name="price-s" value="price-s">
+                                        <label for="price-s">$1000&nbsp;-&nbsp;$10000</label>
+                                    </li>
+                                    <li class="dropdown-filter-item"><input class="secondary-filter-checkbox"
+                                            type="checkbox" id="price-m" name="price-m" value="price-m">
+                                        <label for="price-m">$10000&nbsp;-&nbsp;$100000</label>
+                                    </li>
+                                    <li class="dropdown-filter-item"><input class="secondary-filter-checkbox"
+                                            type="checkbox" id="price-l" name="price-l" value="price-l">
+                                        <label for="price-l">$100000&nbsp;-&nbsp;$10000000</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="catalog-product-tiles">
                 <div class="product-block">
                     <div class="product-container">
                         <div class="product-tile">
@@ -196,10 +283,10 @@
                                 Australian
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.
                             </p>
-                            <span class="product-price pink-text">$52.00</span>
+                            <span class="product-price">$52.00</span>
                         </div>
                         <div class="product-tile">
-                            <img class="product-image" src="../2/img/product-image2.png"
+                            <img class="product-image" src="../2/img/product-image7.png"
                                 alt="Ellery X M'o Capsule - Product for Women" width="360" height="420">
                             <div class="product-image-overlay">
                                 <div class="add-to-cart-button">
@@ -217,7 +304,7 @@
                                 Australian
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.
                             </p>
-                            <span class="product-price pink-text">$52.00</span>
+                            <span class="product-price">$52.00</span>
                         </div>
                         <div class="product-tile">
                             <img class="product-image" src="../2/img/product-image3.png"
@@ -238,10 +325,10 @@
                                 Australian
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.
                             </p>
-                            <span class="product-price pink-text">$52.00</span>
+                            <span class="product-price">$52.00</span>
                         </div>
                         <div class="product-tile">
-                            <img class="product-image" src="../2/img/product-image4.png"
+                            <img class="product-image" src="../2/img/product-image8.png"
                                 alt="Ellery X M'o Capsule - Product4" width="360" height="420">
                             <div class="product-image-overlay">
                                 <div class="add-to-cart-button">
@@ -259,10 +346,10 @@
                                 Australian
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.
                             </p>
-                            <span class="product-price pink-text">$52.00</span>
+                            <span class="product-price">$52.00</span>
                         </div>
                         <div class="product-tile">
-                            <img class="product-image" src="../2/img/product-image5.png"
+                            <img class="product-image" src="../2/img/product-image9.png"
                                 alt="Ellery X M'o Capsule - Product5" width="360" height="420">
                             <div class="product-image-overlay">
                                 <div class="add-to-cart-button">
@@ -281,10 +368,10 @@
                                 Australian
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.
                             </p>
-                            <span class="product-price pink-text">$52.00</span>
+                            <span class="product-price">$52.00</span>
                         </div>
                         <div class="product-tile">
-                            <img class="product-image" src="../2/img/product-image6.png"
+                            <img class="product-image" src="../2/img/product-image10.png"
                                 alt="Ellery X M'o Capsule - Product6" width="360" height="420">
                             <div class="product-image-overlay">
                                 <div class="add-to-cart-button">
@@ -303,10 +390,10 @@
                                 Australian
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.
                             </p>
-                            <span class="product-price pink-text">$52.00</span>
+                            <span class="product-price">$52.00</span>
                         </div>
                         <div class="product-tile">
-                            <img class="product-image" src="../2/img/product-image1.png"
+                            <img class="product-image" src="../2/img/product-image11.png"
                                 alt="Ellery X M'o Capsule - Product for Men" width="360" height="420">
                             <div class="product-image-overlay">
                                 <div class="add-to-cart-button">
@@ -324,10 +411,10 @@
                                 Australian
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.
                             </p>
-                            <span class="product-price pink-text">$52.00</span>
+                            <span class="product-price">$52.00</span>
                         </div>
                         <div class="product-tile">
-                            <img class="product-image" src="../2/img/product-image1.png"
+                            <img class="product-image" src="../2/img/product-image12.png"
                                 alt="Ellery X M'o Capsule - Product for Men" width="360" height="420">
                             <div class="product-image-overlay">
                                 <div class="add-to-cart-button">
@@ -345,10 +432,10 @@
                                 Australian
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.
                             </p>
-                            <span class="product-price pink-text">$52.00</span>
+                            <span class="product-price">$52.00</span>
                         </div>
                         <div class="product-tile">
-                            <img class="product-image" src="../2/img/product-image1.png"
+                            <img class="product-image" src="../2/img/product-image13.png"
                                 alt="Ellery X M'o Capsule - Product for Men" width="360" height="420">
                             <div class="product-image-overlay">
                                 <div class="add-to-cart-button">
@@ -366,7 +453,7 @@
                                 Australian
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.
                             </p>
-                            <span class="product-price pink-text">$52.00</span>
+                            <span class="product-price">$52.00</span>
                         </div>
                     </div>
                     <!-- Pagination -->
@@ -378,7 +465,8 @@
                                         <path d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z" />
                                     </svg></a>
                             </li>
-                            <li class="pagination-list-item"><a href="#" class="page-number">1</a></li>
+                            <!-- Мы на первой странице, потому "1" - не ссылка -->
+                            <li class="pagination-list-item">1</li>
                             <li class="pagination-list-item"><a href="#" class="page-number">2</a></li>
                             <li class="pagination-list-item"><a href="#" class="page-number">3</a></li>
                             <li class="pagination-list-item"><a href="#" class="page-number">4</a></li>
