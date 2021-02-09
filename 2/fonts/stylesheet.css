@@ -1,12 +1,9 @@
 @font-face {
     font-family: 'Lato';
-    src: url('lato-light.eot');
+    src: url('lato-light.woff2');
     src: local('lato-light'),
-        url('lato-light.eot?#iefix') format('embedded-opentype'),
         url('lato-light.woff2') format('woff2'),
-        url('lato-light.woff') format('woff'),
-        url('lato-light.ttf') format('truetype'),
-        url('lato-light.svg#lato-light') format('svg');
+        url('lato-light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -14,13 +11,10 @@
 
 @font-face {
     font-family: 'Lato';
-    src: url('lato-italic.eot');
+    src: url('lato-italic.woff2');
     src: local('Lato Italic'), local('lato-italic'),
-        url('lato-italic.eot?#iefix') format('embedded-opentype'),
         url('lato-italic.woff2') format('woff2'),
-        url('lato-italic.woff') format('woff'),
-        url('lato-italic.ttf') format('truetype'),
-        url('lato-italic.svg#lato-italic') format('svg');
+        url('lato-italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -28,13 +22,10 @@
 
 @font-face {
     font-family: 'Lato';
-    src: url('..lato-black.eot');
+    src: url('..lato-black.woff2');
     src: local('Lato Black'), local('lato-black'),
-        url('lato-black.eot?#iefix') format('embedded-opentype'),
         url('lato-black.woff2') format('woff2'),
-        url('lato-black.woff') format('woff'),
-        url('lato-black.ttf') format('truetype'),
-        url('lato-black.svg#lato-black') format('svg');
+        url('lato-black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -42,13 +33,10 @@
 
 @font-face {
     font-family: 'Lato';
-    src: url('lato-bold.eot');
+    src: url('lato-bold.woff2');
     src: local('Lato Bold'), local('lato-bold'),
-        url('lato-bold.eot?#iefix') format('embedded-opentype'),
         url('lato-bold.woff2') format('woff2'),
-        url('lato-bold.woff') format('woff'),
-        url('lato-bold.ttf') format('truetype'),
-        url('lato-bold.svg#lato-bold') format('svg');
+        url('lato-bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -56,13 +44,10 @@
 
 @font-face {
     font-family: 'Lato';
-    src: url('lato-regular.eot');
+    src: url('lato-regular.woff2');
     src: local('Lato Regular'), local('lato-regular'),
-        url('lato-regular.eot?#iefix') format('embedded-opentype'),
         url('lato-regular.woff2') format('woff2'),
-        url('lato-regular.woff') format('woff'),
-        url('lato-regular.ttf') format('truetype'),
-        url('lato-regular.svg#lato-regular') format('svg');
+        url('lato-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
