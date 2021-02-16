@@ -125,31 +125,31 @@
                 <div class="sign-up-container">
                     <div class="sign-up-col-left">
                         <span class="account-holder-name">Your Name</span>
-                        <form action="#" method="POST" class="personal-info-form" aria-required="true">
+                        <form action="#" method="POST" class="personal-info-form">
                             <label for="FirstName">
-                                <input type="text" class="account-creation-input-personal" placeholder="First Name"
-                                    aria-required="true" required>
+                                <input id="FirstName" type="text" class="account-creation-input-personal"
+                                    placeholder="First Name" required>
                             </label>
                             <label for="LastName">
-                                <input type="text" class="account-creation-input-personal" placeholder="Last Name"
-                                    aria-required="true" required>
+                                <input id="LastName" type="text" class="account-creation-input-personal"
+                                    placeholder="Last Name" required>
                             </label>
-                            <label for="Gender" class="radio-buttons-label">
-                                <input type="radio" id="Male" name="gender" aria-required="true">
-                                <label for="gender-radio-button">Male</label>
-                                <input type="radio" id="Female" name="gender" aria-required="true">
-                                <label for="gender-radio-button">Female</label>
-                                <input type="radio" id="Non-Binary" name="gender" aria-required="true">
-                                <label for="gender-radio-button">Other</label>
-                            </label>
+                            <div class="radio-buttons-label">
+                                <input type="radio" id="gender-male" name="Gender">
+                                <label for="gender-male">Male</label>
+                                <input type="radio" id="gender-female" name="Gender">
+                                <label for="gender-female">Female</label>
+                                <input type="radio" id="gender-other" name="Gender">
+                                <label for="gender-other">Other</label>
+                            </div>
                             <span class="login-details">Login details</span>
                             <label for="email">
-                                <input type="text" class="account-creation-input-account" placeholder="Email"
-                                    aria-required="true" required>
+                                <input type="text" id="email" class="account-creation-input-account" placeholder="Email"
+                                    required>
                             </label>
                             <label for="password">
-                                <input type="text" class="account-creation-input-account" placeholder="Password"
-                                    aria-required="true" required>
+                                <input type="text" id="password" class="account-creation-input-account"
+                                    placeholder="Password" required>
                             </label>
                             <p class="password-hint">Please use 8 or more characters, with at least 1 number and a
                                 mixture
