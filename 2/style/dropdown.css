@@ -1,0 +1,380 @@
+/* ================================ Toggle ================================ */
+
+.dropdown-header,
+.dropdown-subcategory-item,
+.dropdown-filter-item {
+	list-style: none;
+}
+
+.dropdown-filter-item {
+	font-family: 'Roboto', sans-serif;
+	color: #6F6E6E;
+
+	font-style: normal;
+	font-weight: 400;
+	text-align: left;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	position: relative;
+}
+
+.dropdown-filter-item:last-of-type {
+	margin-bottom: 0;
+}
+
+.dropdown-menutoggle,
+.dropdown-trending,
+.dropdown-size,
+.dropdown-price {
+	background: #fff;
+	position: absolute;
+	display: block;
+	float: left;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 32px 0 0 0;
+	background-clip: padding-box;
+	-webkit-box-shadow: 6px 4px 35px 0 #00000036;
+	        box-shadow: 6px 4px 35px 0 #00000036;
+}
+
+.dropdown-trending,
+.dropdown-size,
+.dropdown-price {
+	padding: 9px 10px 12px 10px;
+	top: -50%;
+	left: -5%;
+}
+
+/* z-index разный чтобы чекбоксы можно было чекнуть даже если предыдущий блок налезет на следующий (зум > 200%) */
+.dropdown-menutoggle {
+	padding: 46px 17px 17px 17px;
+	top: -45px;
+	left: 0;
+	width: 100%;
+	max-width: 360px;
+	z-index: 3;
+}
+
+@media only screen and (max-width: 376px) {
+	.dropdown-menutoggle {
+	min-width: 375px;
+	}
+}
+
+.dropdown-trending {
+	min-width: 175px;
+	z-index: 2;
+}
+
+.dropdown-size {
+	min-width: 86px;
+	z-index: 2;
+}
+
+.dropdown-price {
+	min-width: 178px;
+	z-index: 2;
+}
+
+.dropdown-header-text {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	color: #EF5B70;
+	text-transform: uppercase;
+
+	font-weight: 400;
+	font-style: normal;
+	min-height: 37px;
+	border-bottom: 1px solid #ebebeb;
+	margin-bottom: 24px;
+	cursor: pointer;
+}
+
+.dropdown-header-text::before {
+	content: '';
+	min-height: 37px;
+	z-index: 1;
+	position: relative;
+	border: 5px solid;
+	border-width: 0 0 0 5px;
+	border-color: #EF5B70;
+	margin-right: 11px;
+}
+
+.subcategories li {
+	position: relative;
+
+	font-style: normal;
+	font-weight: 400;
+	line-height: 17px;
+	
+	text-align: left;
+	color: #6F6E6E;
+	margin-bottom: 11px;
+}
+
+.subcategories li:last-child {
+	margin-bottom: 24px;
+}
+
+/* переделать*/
+.dropdown-menutoggle>li:last-child>span {
+	margin-bottom: 0;
+}
+
+.category-checkbox,
+.dropdown-checkbox {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.secondary-filter-checkbox {
+	width: 12px;
+	height: 12px;
+	border: 1px solid #ebebeb;
+	border-radius: 0;
+	margin-right: 10px;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	outline: focus-visible;
+	position: relative;
+}
+
+.secondary-filter-checkbox::after {
+	content: '\f00c';
+	opacity: 0;
+	font-family: "Font Awesome 5 Free", sans-serif;
+	font-weight: 900;
+	font-size: 0.75em;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.category-checkbox~label,
+.secondary-filter-checkbox~label {
+	cursor: pointer;
+}
+
+.secondary-filter-checkbox~label {
+	text-transform: uppercase;
+}
+
+/* ================================ end Toggle ================================ */
+
+/* ================================ Primary Filters ================================ */
+
+.toggle-wrapper {
+	position: relative;
+
+	font-weight: 400;
+	font-style: normal;
+}
+
+.primary-filter__categories,
+.trending-filter__categories,
+.size-filter__categories,
+.price-filter__categories {
+	display: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: transparent;
+	border: none;
+	outline: focus-visible;
+	padding: 0 16px;
+	color: #e8e8e8;
+	font-family: inherit;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.filters-primary .toggle-wrapper {
+	overflow: visible;
+}
+
+.category-filter-icon {
+	fill: #000;
+	margin-left: 10px;
+	z-index: 3;
+	position: relative;
+}
+
+[id*="filter"]~label {
+	cursor: pointer;
+	text-align: left;
+	z-index: 4;
+	position: relative;
+}
+
+/* ================================ end Primary Filters ================================ */
+
+/* ================================ Trending Filters ================================ */
+
+.filters-secondary {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+
+.secondary-filter-dropdown-header {
+	background: none;
+	border: none;
+	cursor: pointer;
+	outline: focus-visible;
+	list-style-type: none;
+	padding: 0 10px 0 0;
+	margin-right: 28px;
+	color: #6F6E6E;
+	text-transform: uppercase;
+
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	text-align: center;
+}
+
+@media only screen and (max-width: 376px) {
+	.secondary-filter-dropdown-header {
+	margin-right: 4px;
+	}
+
+	.fa-chevron-down {
+	margin-left: 4px;
+	}
+}
+
+.filter-btn-text {
+	color: #000;
+
+	font-style: normal;
+	font-weight: 600;
+	line-height: 17px;
+	
+	text-align: left;
+	text-transform: uppercase;
+	background-color: transparent;
+	margin-left: 14px;
+	word-break: break-all;
+}
+
+@media only screen and (max-width: 376px) {
+	.filters-primary {
+	max-width: 70px;
+	}
+
+	.filter-btn-text {
+	display: none;
+	}
+}
+
+/* ================================ end Trending Filters ================================ */
+
+/* ================================ Filters -- effects ================================ */
+
+.secondary-filter-dropdown-header:hover {
+	color: #222;
+}
+
+.secondary-filter-checkbox:hover::after {
+	color: #ebebeb;
+	opacity: 1;
+	cursor: pointer;
+}
+
+.secondary-filter-checkbox:checked::after {
+	color: #6F6E6E;
+	opacity: 1;
+	top: 8%;
+	left: 8%;
+}
+
+.secondary-filter-checkbox:checked {
+	border: none;
+	transform: scale(1.25);
+	-webkit-transform: scale(1.25);
+	-ms-transform: scale(1.25);
+}
+
+.secondary-filter-checkbox:checked+.secondary-filter-checkbox::after {
+	display: block;
+}
+
+.category-checkbox:checked~label,
+.secondary-filter-checkbox:checked~label {
+	font-weight: bold;
+	color: #222;
+}
+
+.dropdown-header-text:hover,
+.category-checkbox~label:hover {
+	font-weight: bold;
+}
+
+.primary-filter:hover .filter-btn-text,
+.primary-filter:hover .category-filter-icon {
+	color: #636363;
+	fill: #636363;
+}
+
+#filter-toggle:hover~label span {
+	color: #636363;
+}
+
+#filter-toggle:hover~.category-filter-icon {
+	fill: #636363;
+}
+
+/* не работает просто по классу */
+#filter-toggle:checked~label[for="filter-toggle"] .filter-btn-text {
+	color: #f16d7f;
+}
+
+#filter-toggle:checked~label[for="filter-toggle"] .category-filter-icon {
+	fill: #f16d7f;
+}
+
+#filter-toggle:checked~.primary-filter__categories {
+	display: block;
+}
+
+#trending-toggle:checked~.trending-filter__categories {
+	display: block;
+}
+
+#size-toggle:checked~.size-filter__categories {
+	display: block;
+}
+
+#price-toggle:checked~.price-filter__categories {
+	display: block;
+}
+
+/* ================================ end Filters -- effects ================================ */
