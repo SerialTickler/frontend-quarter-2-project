@@ -4,60 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/lato-regular.woff2">
+    <link rel="preload" as="font" type="font/woff2" href="./fonts/lato-light.woff2">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style/style.css">
-    <!-- если подключить файлом -- шрифты скачут пока грузится, даже с диска -->
-    <!-- <link rel="stylesheet" href="fonts/stylesheet.css"> -->
     <link rel="stylesheet" href="css/all.min.css">
-    <style>
-        @font-face {
-            font-family: 'Lato';
-            src: url('./fonts/lato-light.woff2');
-            font-weight: 300;
-            font-style: normal;
-            font-display: swap
-        }
-
-        @font-face {
-            font-family: 'Lato';
-            src: url('./fonts/lato-italic.woff2');
-            font-weight: 400;
-            font-style: italic;
-            font-display: swap
-        }
-
-        @font-face {
-            font-family: 'Lato';
-            src: url('./fonts/lato-regular.woff2');
-            font-weight: 400;
-            font-style: normal;
-            font-display: swap
-        }
-
-        @font-face {
-            font-family: 'Lato';
-            src: url('./fonts/lato-bold.woff2');
-            font-weight: 700;
-            font-style: normal;
-            font-display: swap
-        }
-
-        @font-face {
-            font-family: 'Lato';
-            src: url('./fonts/lato-black.woff2');
-            font-weight: 900;
-            font-style: normal;
-            font-display: swap
-        }
-
-        @font-face {
-            font-family: 'Roboto';
-            src: url('./fonts/Roboto-Regular.woff2') format('woff2'), url('./fonts/Roboto-Regular.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap
-        }
-    </style>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/cart.css">
     <title>Cart — Homework</title>
 </head>
 
@@ -115,8 +69,8 @@
             <section class="page-title-container">
                 <div class="page-title-block">
                     <div class="page-title__box">
-                        <div class="page-title-text pink-text">
-                            <span class="page-title-text">Shopping Cart</span>
+                        <div class="page-title-text text-l pink-text">
+                            <span class="page-title-text text-l">Shopping Cart</span>
                         </div>
                     </div>
                 </div>
@@ -128,22 +82,23 @@
                             <a href="#" class="product-link"><img src="img/mango-ppl-tshirt-1.png"
                                     alt="Mango People T-Shirt | Cart" class="product-miniature" width="262"
                                     height="306"></a>
-                            <div class="product-info"><span class="cart-item-title">Mango People T-Shirt</span>
+                            <div class="product-info"><span class="cart-item-title text-l">Mango People
+                                    T-Shirt</span>
                                 <p class="cart-item-option-row">
-                                    <span class="cart-item-option-label">Price:</span>
-                                    <span class="cart-item-option-value pink-text">&#036;300</span>
+                                    <span class="cart-item-option-label text-s">Price:</span>
+                                    <span class="cart-item-option-value text-s pink-text">&#036;300</span>
                                 </p>
                                 <p class="cart-item-option-row">
-                                    <span class="cart-item-option-label">Color:</span>
-                                    <span class="cart-item-option-value">Red</span>
+                                    <span class="cart-item-option-label text-s">Color:</span>
+                                    <span class="cart-item-option-value text-s">Red</span>
                                 </p>
                                 <p class="cart-item-option-row">
-                                    <span class="cart-item-option-label">Size:</span>
-                                    <span class="cart-item-option-value">Xl</span>
+                                    <span class="cart-item-option-label text-s">Size:</span>
+                                    <span class="cart-item-option-value text-s">Xl</span>
                                 </p>
                                 <p class="cart-item-option-row">
-                                    <span class="cart-item-option-label">Quantity:</span>
-                                    <input type="text" class="prodyct-qty" value="2">
+                                    <span class="cart-item-option-label text-s">Quantity:</span>
+                                    <input type="text" class="prodyct-qty text-s" value="2">
                                 </p>
                             </div>
                         </div>
@@ -151,22 +106,23 @@
                             <a href="#" class="product-link"><img src="img/mango-ppl-tshirt-2.png"
                                     alt="Mango People T-Shirt | Cart" class="product-miniature" width="262"
                                     height="306"></a>
-                            <div class="product-info"><span class="cart-item-title">Mango People T-Shirt</span>
+                            <div class="product-info"><span class="cart-item-title text-l">Mango People
+                                    T-Shirt</span>
                                 <p class="cart-item-option-row">
-                                    <span class="cart-item-option-label">Price:</span>
-                                    <span class="cart-item-option-value pink-text">&#036;300</span>
+                                    <span class="cart-item-option-label text-s">Price:</span>
+                                    <span class="cart-item-option-value text-s pink-text">&#036;300</span>
                                 </p>
                                 <p class="cart-item-option-row">
-                                    <span class="cart-item-option-label">Color:</span>
-                                    <span class="cart-item-option-value">Red</span>
+                                    <span class="cart-item-option-label text-s">Color:</span>
+                                    <span class="cart-item-option-value text-s">Red</span>
                                 </p>
                                 <p class="cart-item-option-row">
-                                    <span class="cart-item-option-label">Size:</span>
-                                    <span class="cart-item-option-value">Xl</span>
+                                    <span class="cart-item-option-label text-s">Size:</span>
+                                    <span class="cart-item-option-value text-s">Xl</span>
                                 </p>
                                 <p class="cart-item-option-row">
-                                    <span class="cart-item-option-label">Quantity:</span>
-                                    <input type="text" class="prodyct-qty" value="2">
+                                    <span class="cart-item-option-label text-s">Quantity:</span>
+                                    <input type="text" class="prodyct-qty text-s" value="2">
                                 </p>
                             </div>
                         </div>
@@ -176,7 +132,7 @@
                         </div>
                     </div>
                     <div class="cart-col-right">
-                        <span class="shipping-info-heading">Shipping Address</span>
+                        <span class="shipping-info-heading text-n">Shipping Address</span>
                         <div class="shipping-and-checkout">
                             <form class="shipping-form" action="#" method="post">
                                 <input type="text" name="Country" id="Country" class="shipping-info"
@@ -190,11 +146,11 @@
                             <div class="order-price-block">
                                 <p class="price-subtotal">
                                     <span class="subtotal">sub total</span>
-                                    <span class="subtotal-price">&#036;900</span>
+                                    <span class="subtotal-price text-n">&#036;900</span>
                                 </p>
-                                <p class="price-total">
+                                <p class="price-total text-n">
                                     <span class="grand-total">grand total</span>
-                                    <span class="total-price pink-text">&#036;900</span>
+                                    <span class="total-price text-n pink-text">&#036;900</span>
                                 </p>
                                 <button class="checkout-btn">proceed to checkout</button>
                             </div>
@@ -210,16 +166,14 @@
                             alt="Read the BS our marketing department came up with." height="96" width="96">
                     </div>
                     <p class="epigraph-block-content">&laquo;Vestibulum quis porttitor dui! Quisque viverra
-                        nunc&nbsp;mi,
-                        <span>a&nbsp;pulvinar purus condimentum&raquo;</span>
-                    </p>
+                        nunc&nbsp;mia&nbsp;pulvinar purus condimentum&raquo;</p>
                 </div>
                 <div class="subscription-block">
-                    <span class="subscription-title">Subscribe</span>
+                    <span class="subscription-title text-l">Subscribe</span>
                     <span class="subscription-subtitle">to our newsletter and promotion!</span>
                     <form action="#" class="subscription-form">
                         <input class="subscription-form-email" type="email" placeholder="Enter Your Email" required>
-                        <input class="subscription-form-button" type="submit" value="Subscribe">
+                        <input class="subscription-form-button text-s" type="submit" value="Subscribe">
                     </form>
                 </div>
             </section>
